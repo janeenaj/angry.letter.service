@@ -16,4 +16,12 @@ function tab(num){
     pro.item(num).style.display = 'block';
 }
     
+let inner = document.querySelector('.wri');
+
+inner.onclick = function(event){
+    alert('페이지 준비중');
+    event.stopPropagation();
 };
+};
+
+

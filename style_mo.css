@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+img{width: 100%;}
+a:hover {text-decoration: underline;}
+body {position: relative;}
+header { width: 100%; padding: 5%; position: absolute; left: 0; top: 0; z-index: 9999;}
+header h1 a {display: block; width: 10%; border-radius: 100%; border-radius: 100%;border: 2px solid rgb(249, 253, 8); position: fixed;}
+header h1 a:hover {transform: translate(2px , 1px); opacity: 0.5;}
+header .wri {margin-top: 15%; margin-left: 1vw; color: red; font-weight: 700;}
+#container {position: relative; margin: 0 auto; width: 100%;}
+#container nav {position: absolute;width: 20%; font-size: 1.5vw; line-height: 2; z-index: 99999; right: 0; top: 2%;}
+#container nav .tit h2{width: 100%; margin-top: 5%; background-color: rgb(255, 89, 247); color: #fff; border-radius: 5px 0 0 5px;}
+#container nav .tit h2:hover {background-color: rgb(249, 253, 8);color:rgb(24, 23, 23); cursor: pointer;}
+#container nav .tit h2.on {background-color: rgb(249, 253, 8);color: rgb(146, 132, 122);}
+
+#container .bg1 {position:relative; width: 100%;}
+#container .bg1 li:nth-child(1){position:fixed; z-index: 999;top: 0; left: 0;}
+#container .bg1 li:nth-child(2){position:scroll; z-index: 9; top: 30%; left: 0;}
+
+#container .li {display: block; width: 100%;}
+#container .bg1{display: block;}
+
+#container .bg2{display: none;}
+
+#container .bg2 li {position: relative;}
+#container .bg2 li .ex{position: absolute;top: 30%; left: 20%;font-size: 1.5vw; line-height: 8;}
+
+footer {height: 20%; background-color: rgb(0, 138, 74);color: aquamarine; text-align: center; padding: 8% 0 5%; box-sizing: border-box;}
+footer nav ul { width: 50%; text-align: center;
+margin: 0 auto;}
