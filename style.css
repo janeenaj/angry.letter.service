@@ -11,6 +11,7 @@ body .pop .popc{
     width: 30%;
     height: 35vw;
     background-color: red;
+    background-image: url(bg.jpg)
     top: 10%;
     left: 50%;
     margin-left: -15%;
@@ -18,7 +19,6 @@ body .pop .popc{
     padding: 2%;
 }
 body .pop .head {
-    background-color: red;
     text-indent: 5%;
     padding: 1% 0;
     display: flex;
