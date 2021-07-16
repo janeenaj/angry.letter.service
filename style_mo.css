@@ -10,7 +10,6 @@ body .pop {position:absolute; z-index: 999999; background-color:rgba(0, 0, 0, 0.
 body .pop .popc{
     width: 80%;
     height: 65vw;
-    background-color: red;
     top: 10%;
     left: 40%;
     margin-left: -25%;
