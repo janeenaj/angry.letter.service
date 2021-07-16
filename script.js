@@ -1,10 +1,20 @@
 window.onload = function(){
-    let list = document.querySelectorAll('.tit h2');
-    let pro = document.querySelectorAll('#container .list');
-    for (let i in list){
-    list.item(i).addEventListener('click',function(){
+    let tit = document.querySelectorAll('.tit h2');
+    let li = document.querySelectorAll('.li');
+    for (let i in tit){
+    tit.item(i).addEventListener('click',function(){
        tab(i);
     });
+}            
+    
+function tab(num){
+    for (let j in tit){
+        tit.item(j).removeAttribute('class');
+        li.item(j).style.display = 'none';
+    }
+    tit.item(num).setAttribute('class','on');
+    li.item(num).style.display = 'block';
+    
 
     let open = document.querySelector('.open');
 
