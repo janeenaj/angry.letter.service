@@ -16,7 +16,7 @@ body .pop .popc{
     margin-left: -25%;
     position: fixed;
     padding: 2%;
-    background-image: url(../images/bg.jpg);
+    background-image: url(bg.jpg);
 }
 body .pop .head {
     text-indent: 5%;
