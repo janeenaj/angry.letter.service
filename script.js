@@ -1,6 +1,6 @@
 window.onload = function(){
     let tit = document.querySelectorAll('.tit h2');
-    let li = document.querySelectorAll('.li');
+    let lis = document.querySelectorAll('.lis');
     for (let i in tit){
     tit.item(i).addEventListener('click',function(){
        tab(i);
@@ -10,10 +10,10 @@ window.onload = function(){
 function tab(num){
     for (let j in tit){
         tit.item(j).removeAttribute('class');
-        li.item(j).style.display = 'none';
+        lis.item(j).style.display = 'none';
     }
     tit.item(num).setAttribute('class','on');
-    li.item(num).style.display = 'block';
+    lis.item(num).style.display = 'block';
     
 
     let open = document.querySelector('.open');

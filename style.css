@@ -10,7 +10,7 @@ body .pop {position:absolute; z-index: 999999; background-color:rgba(0, 0, 0, 0.
 body .pop .popc{
     width: 30%;
     height: 35vw;
-    background-color: url(bg.jpg);
+    background-color: red;
     top: 10%;
     left: 50%;
     margin-left: -15%;
@@ -18,7 +18,7 @@ body .pop .popc{
     padding: 2%;
 }
 body .pop .head {
-
+    background-color: red;
     text-indent: 5%;
     padding: 1% 0;
     display: flex;
@@ -96,7 +96,7 @@ header .wri {margin-top: 15%; margin-left: 1vw; color: red; font-weight: 700;}
 #container .bg1 li:nth-child(1){position:fixed; z-index: 999;top: 0; left: 0;min-width: inherit;}
 #container .bg1 li:nth-child(2){position:scroll; z-index: 9; top: 30%; left: 0; min-width: inherit;}
 
-#container .li {display: block;}
+#container .lis{display: block;}
 #container .bg1{display: block;}
 
 #container .bg2{display: none;}
