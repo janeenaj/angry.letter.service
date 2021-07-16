@@ -4,7 +4,7 @@ img{width: 100%;}
 a{transition: all 0.4s;}
 a:hover {text-decoration: underline;}
 body {position: relative;}
-header { width: 100%; padding: 5%; position: absolute; left: 0; top: 0; z-index: 9999;}
+header { width: 100%; box-sizing: border-box; padding: 5%; position: absolute; left: 0; top: 0; z-index: 9999;}
 header h1 a {display: block; width: 10%; border-radius: 100%; border-radius: 100%;position: fixed; transition: opacity 0.4s;}
 header h1 a:hover { opacity: 0.5;}
 header .wri {margin-top: 15%; margin-left: 1vw; color: red; font-weight: 700;}
@@ -23,8 +23,8 @@ header .wri {margin-top: 15%; margin-left: 1vw; color: red; font-weight: 700;}
 
 #container .bg2{display: none;}
 
-#container .bg2 li {position: relative;}
-#container .bg2 li .ex{position: absolute;top: 20%; left: 20%;font-size: 1.2vw; line-height: 4;width: 50%;height: 50%; color: blue; font-weight: 100;}
+#container .bg2 li {position: relative; width: 100%; }
+#container .bg2 li .ex{position: absolute;top: 20%; left: 20%;font-size: 1.2vw; line-height: 4;width: 50%; transform: transitionX(-50%); left: 25%;height: 50%; color: blue; font-weight: 100;}
 #container .bg2 li .ex em {color: red}
 
 footer {
