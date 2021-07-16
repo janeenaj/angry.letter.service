@@ -4,18 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
+    <title>angry letter service</title>
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="style_mo.css">
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           $('.send').eq(1).click(function(){
+           //$('.m0').animate({left:500},2000);
+           $('.pop img').animate({left:'80%',opacity:0,},'fast').animate({left:0,opacity:1},2000,function(){alert('어디론가 사라짐!')});//fast:400
+       });  
+   
+   
+   });
+  
+       
+       
+    </script>
 </head>
 <body>
     <div class="blind"><a href="#container">본문내용바로가기</a></div>
+    <div class="pop">
+        <div class="popc">
+            <div class="head">
+                    <h3>편지쓰기 </h3>
+                    <button class="close">X</button>
+            </div>
+ 
+         <form>
+             <fieldset>
+                 <legend>000님에게...</legend>
+                 <p><textarea style="resize: none;" id="letter" cols="60" rows="200" placeholder="여기에 작성하세요.*내용은 저장되지 않습니다." ></textarea>
+                 <input class="send" type="reset" value="보내기">    
+                 </p>
+                 <p class="send"><input type="reset" value="보내기">
+                 </p>
+             </fieldset>
+         </from>
+             <!-- <p class="send"><input type="reset" value="리셋"> -->
+         <div><img src="../images/logo.gif" alt></div>
+         </div>
+        </div>
+     </div>
     <header>
-        <h1><a href="index_mo.html"><img src="logo.gif" alt="로고"></a></h1>
+        <h1><a href="index_mo.html"><img src="../images/logo.gif" alt="로고"></a></h1>
         <div class="wri">
             <ul>
-                <li><a href="#">편지쓰기</a></li>
+                <li><a href="#" class="open">편지쓰기</a></li>
             </ul>
         </div>
     </header>
@@ -27,11 +63,11 @@
             </div>
         </nav>
         <ul class="bg1 list">
-            <li><img src="als_mo2_2.png" alt></li>
-            <li><img src="als_mo.jpg" alt></li>
+            <li><img src="../images/als_mo2_2.png" alt></li>
+            <li><img src="../images/als_mo.jpg" alt></li>
         </ul>
         <ul class="bg2 list">
-            <li><img src="als_mo3.jpg" alt>
+            <li><img src="../images/als_mo3.jpg" alt>
                 <ul class="ex">
                     <li>1. 분노하신 상태 그대로 이 사이트를 찾아오세요.<br</li>
                     <li>2.<strong>편지쓰기</strong> 버튼을 눌러주세요.</li>

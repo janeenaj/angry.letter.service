@@ -1,9 +1,99 @@
 @charset "utf-8";
-
+input:active { background-color: aqua;}
 img{width: 100%;}
 a{transition: all 0.4s;}
 a:hover {text-decoration: underline;}
 body {position: relative;}
+
+
+body .pop {position:absolute; z-index: 999999; background-color:rgba(0, 0, 0, 0.5); width: 100%; height: 100%; opacity: 1;}
+body .pop .popc{
+    width: 50%;
+    height: 65vw;
+    background-color: red;
+    top: 10%;
+    left: 50%;
+    margin-left: -25%;
+    position: fixed;
+    padding: 2%;
+}
+body .pop .head {
+    background-color: red;
+    text-indent: 5%;
+    padding: 1% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body .pop .head h3 {
+    line-height: 1;
+    display: inline;
+    width: 95%;
+    text-align: center;
+}
+body .pop .popc .head .close {
+    line-height: 1;
+    padding: 1%;
+    width: 3vw;
+    margin-top: -1%;
+    cursor: pointer;
+    text-align: center;
+}
+body .pop fieldset {
+    margin: 0 auto;
+    width: 80%;
+    height: 45vw;
+    overflow-x: hidden;
+    position: relative;
+    padding-top: 10px;
+}
+body .pop fieldset legend {line-height: 2; color: yellow;}
+body .pop fieldset >p{
+    width: 100%;    
+}
+body .pop fieldset textarea {
+    width: 100%;
+    line-height: 1.5;
+    border: 2px solid yellow;
+    color: blue;
+    font-size: 1.2vw;
+    outline-style: none;
+}
+body .pop fieldset .send input {
+    position: absolute;
+    padding: 1%;
+    border-radius: 3px;
+    border: 1px solid #666;
+    cursor: pointer;
+    top: 0;
+    right: 2%;
+}
+body .pop p{
+    padding: 5%;
+    box-sizing: border-box;
+    width: 80%;
+}
+body .pop div img {
+    width: 12%;
+    position: relative;
+    top: 2vw;
+    margin-left: 2vw;
+}
+.pop {display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 header { width: 100%; box-sizing: border-box; padding: 5%; position: absolute; left: 0; top: 0; z-index: 9999;}
 header h1 a {display: block; width: 10%; border-radius: 100%; border-radius: 100%;position: fixed; transition: opacity 0.4s;}
 header h1 a:hover { opacity: 0.5;}
@@ -24,7 +114,7 @@ header .wri {margin-top: 15%; margin-left: 1vw; color: red; font-weight: 700;}
 #container .bg2{display: none;}
 
 #container .bg2 li {position: relative; width: 100%; }
-#container .bg2 li .ex{position: absolute;top: 20%; left: 20%;font-size: 2.5vw; line-height: 4;width: 50%; transform: transitionX(-50%); left: 25%;height: 50%; color: blue; font-weight: 100;}
+#container .bg2 li .ex{position: absolute;top: 20%; left: 20%;font-size: 3vw; line-height: 4;width: 50%; transform: transitionX(-50%); left: 25%;height: 50%; color: blue; font-weight: 100;}
 #container .bg2 li .ex em {color: red}
 
 footer {
