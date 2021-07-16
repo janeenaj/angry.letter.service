@@ -8,17 +8,17 @@ body {position: relative;}
 
 body .pop {position:absolute; z-index: 999999; background-color:rgba(0, 0, 0, 0.5); width: 100%; height: 100%; opacity: 1;}
 body .pop .popc{
-    width: 50%;
+    width: 80%;
     height: 65vw;
     background-color: red;
     top: 10%;
-    left: 50%;
+    left: 40%;
     margin-left: -25%;
     position: fixed;
     padding: 2%;
 }
 body .pop .head {
-    background-color: red;
+    background-img: url(bg.jpg);
     text-indent: 5%;
     padding: 1% 0;
     display: flex;
@@ -56,7 +56,7 @@ body .pop fieldset textarea {
     line-height: 1.5;
     border: 2px solid yellow;
     color: blue;
-    font-size: 1.2vw;
+    font-size: 2vw;
     outline-style: none;
 }
 body .pop fieldset .send input {
