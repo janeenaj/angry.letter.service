@@ -1,0 +1,143 @@
+@charset "utf-8";
+input:active { background-color: aqua;}
+img{width: 100%;}
+a{transition: all 0.4s;}
+a:hover {text-decoration: underline;}
+.on {display: block;}
+body {
+    width: 100%;
+    position: relative;
+}
+
+header { width: 100%; } 
+header h1 {width: 20%;padding: 2%; top:5%; text-align: center; font-size: 12px; position: fixed;z-index: 999;}
+header div nav {position: absolute; top: 15vw; right: 0; display: flex; flex-direction: column; width: 25%; z-index: 999;}
+header div nav a {width: 100%; flex-basis: 30%; margin-bottom: 3vw; font-size: 3vw; color: lavender; background-color: blueviolet; border-radius: 10px 0 0 10px; padding: 5%; box-sizing: border-box;transition: all 0.5s;}
+
+header div >a {position: absolute; left: 2%; top: 40vw; text-decoration: underline; color: tomato; font-weight: 700; z-index: 999;}
+ header div nav a:hover {background-color: yellow; color:red;}
+ /* header div nav a:visited {color: lavender; background-color: blueviolet;}  */
+ header div nav a.on {background-color: yellow; color:red;} 
+section { 
+    width: 100%; 
+    max-height: 1000px;
+    position: relative;
+    }
+section.intro {
+    width: 100%;
+    height: 100%;
+    /* background-image: url(als_mo2_2.png),url(als_mo.jpg);
+    background-attachment: fixed, scroll;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat; */
+   position: absolute;
+}
+section.intro >div >img{ position: fixed; z-index: 111;}
+/* section.intro >div >img >div >img {position: scroll; z-index: 0;} */
+section.intro >div .bg {background-image: url(als_mo.jpg);
+    background-attachment: scroll;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: scroll; 
+    z-index: 0;
+}
+
+section.explain {
+    background-image: url(als_mo3.jpg); 
+    background-size: 100%;
+     background-position: left bottom; 
+     background-repeat: no-repeat; 
+     height: 100%;
+     position: fixed;
+     z-index: 10;
+    }
+section.explain .ex-con {position: absolute;
+    font-size:  3.5vw; width: 80%; height: 100%; padding:10% 5%; box-sizing: border-box; color: blue; top: 27%;left: 15vw; text-align: left; line-height: 1.6; word-wrap: break-word; word-break: keep-all;}
+    section.explain .ex-con em {
+        color: crimson;
+        font-size: 3vw;
+        word-break: keep-all; 
+    }
+
+
+
+
+
+section#modal {position:fixed; z-index: 99999;background-color:rgba(0, 0, 0, 0.7); width: 100%; height: 100%; top: 0; left: 0;}
+section#modal .pop{
+    width: 80%;
+    background-color: red;
+    top: 20vw;
+    left: 20%;
+    margin-left: -10%;
+    position: absolute;
+    padding: 5% 2% 10%;
+    background-image: url(bg.jpg);
+    z-index: 9999999;
+}
+section#modal .pop .head {
+    text-indent: 5%;
+    padding: 1% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section#modal .pop .head h3 {width: 80%;}
+section#modal .pop .head button {width: 8vw;}
+section#modal .pop form fieldset{ 
+    margin: 0 auto;
+    width: 80%;
+    height: 50vw;
+    overflow-x: hidden;
+    padding-top: 10px;
+    position: relative;
+}
+section#modal .pop form fieldset legend {line-height: 2; color: yellow;}
+section#modal .pop form fieldset legend >input {width: 30%; line-height: 1.5; color: red; background-color: #000;}
+section#modal .pop form fieldset textarea {
+    width: 100%;
+    line-height: 1.5;
+    border: 2px solid yellow;
+    color: blue;
+    font-size: 15px;
+    outline-style: none;
+    margin-top: 10px;
+}
+section#modal .pop form fieldset >.send input {
+    position: absolute;
+    padding: 1%;
+    border-radius: 3px;
+    border: 1px solid #666;
+    cursor: pointer;
+    top: -2%;
+    right: 0;
+}
+section#modal .pop:nth-last-child(0) div{
+    padding: 10%;
+    box-sizing: border-box;
+    width: 80%;
+}
+section#modal .pop div img {
+    width: 20%;
+    position: relative;
+    top: 5vw;
+    margin-left: 2vw;
+} 
+section.intro {display: block;}
+/* section.explain  {display: none;} */
+section#modal {display: none; z-index: 99999;} 
+
+
+
+footer {
+    position: relative;
+    bottom: -350vw;
+    z-index: 11;
+     width: 100%;
+     height: 25vw;
+     background-color: rgb(0, 138, 74);color: aquamarine; text-align: center; padding: 8% 0 5%; box-sizing: border-box; font-size: 1.2vw;}
+footer nav ul { width: 50%; text-align: center;
+margin: 0 auto; }
+footer small {font-size: 1.2vw;}
