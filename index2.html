@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>angry letter service</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style_mo.css">
+     <!-- <script src="script.js"></script> -->
+     <script src="jquery-3.6.0.min.js"></script>
+    <script>
+           $(function(){
+ 
+            $('.send').eq(1).click(function(){
+            
+            $('.pop img').animate({left:'80%',opacity:0,},'fast').animate({left:0,opacity:1},2000,function(){alert('어디론가 사라짐!')});
+            });
+            $('.tit3').click(function(){
+                $('#modal').fadeIn();
+            });
+                
+                $('.close').click(function(){
+                    $('#modal').fadeOut();
+                });
+        
+                $('.tab' ).click( function() {
+                    $(this).toggleClass( 'on' );
+                });
+            });    
+ 
+    </script>
+</head>
+<body>
+    <div class="blind"><a href="#container">본문내용바로가기</a></div>
+        <header id="container"> 
+            <h1><a href="#container"><img src="logo.gif" alt="als로고">↑↑↑</a></h1>
+            <div>
+                <nav>
+                    <a href="index.html" class="tab ">소개</a>
+                    <a href="index2.html" class="tab on">사용방법</a>
+                </nav>
+                <a href="#" class="tit3">편지쓰기</a>
+            </div>
+        </header>
+      
+        <section class="explain con"><h2 class="blind">설명서</h2>
+            <ul class="ex-con">
+                <li>1. 분노하신 상태 그대로 이 사이트를 찾아오세요.<br</li>
+                <li>2.<strong>편지쓰기</strong> 버튼을 눌러주세요.</li>
+                <li>3.누군가에게 하고 싶은 말을 편지 쓰듯이 써주세요.</li>
+                <li>4.편지를 보내세요!</li>
+                <li>5.끝났습니다.</li>
+                <li><em>*이 사이트에 기록되는 내용은 어느 곳에도 저장되지 않습니다.<br>~다양한 방법으로 자신의 마음을 마주해 보시길 바랍니다~</em></li>                  
+            </ul>
+            <!-- <div><img src="als_mo3.jpg" alt></div> -->
+        </section>
+        <section id="modal"><h2 class="blind">편지쓰기</h2>
+            <div class="pop">
+                <div class="head">
+                    <h3>편지쓰기</h3>
+                    <button class="close">X</button>
+                </div>
+                    <form>
+                        <fieldset>
+                            <legend><input tyoe="txet">님에게...</legend>
+                            <p><textarea style="resize: none;" id="letter" cols="60" rows="200" placeholder="여기에 작성하세요.*내용은 저장되지 않습니다." ></textarea>
+                            <input class="send" type="reset" value="보내기">    
+                            </p>
+                            <p class="send"><input type="reset" value="보내기">
+                            </p>
+                        </fieldset>
+                    </form>
+                    <div>
+                        <img src="logo.gif" alt>
+                    </div>
+                </div>                      
+        </section>
+    <footer>
+        <small>
+            @angry.letter.service 이 사이트는 개인 작업용으로 만들어진 가상 사이트입니다.<br>
+            사이트에 사용된 사진의 저작권은pngtree,unsplash,freepik에 있습니다.<br>
+            COPYRIGTHⓒjjaneena ALL RIGHTS RESERVED.
+        </small>
+    </footer>
+    <script>
+             
+         </script>
+</body>
+</html>

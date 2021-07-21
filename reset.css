@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+body,header,footer,nav,address,h1,h2,h3,h4,h5,h6,ul,ol,li,p,div,span,small,a,img,fieldset,input {margin: 0; padding: 0; border: 0;}
+ul,ol,li {list-style: none;}
+address {font-style: normal;}
+body {font-family:"Malgun Gothic", "맑은 고딕", helvetica, "Helvetica Neue", "Apple SD Gothic Neo", "Dotum", "돋움", sans-serif; font-size: 19px; color: #333; font-weight: 300;}
+small{font-size: 14px;}
+a {text-decoration: none; color: inherit; cursor: pointer;}
+img {vertical-align: top;}
+.blind {position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: -1px;}
